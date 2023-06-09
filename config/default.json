@@ -1,0 +1,50 @@
+{
+    "application": {
+        "name": "encryptedVidStream",
+		"author": "Bradley Methorst <contact@bradleymethorst.com>",
+		"license": "GPL-3.0",
+		"version": "0.0.1",
+		"networking": { "host": "127.0.0.1", "port": "8303" },
+        "sub-modules": {
+			"security": {
+				"encryption": {
+					"enabled": true,
+					"type": "AES-256-CTR",
+					"privateKey": "rUS1l+8BPwwhOoGGfOcpKi6lm1nChA8h",
+					"IVlength": 8
+				}
+			},
+			"logging": {
+				"transports": {
+					"winston": {
+						"type": "file",
+						"enabled": true,
+						"rotation": true,
+						"path": "../logs"
+					},
+					"console": {
+						"type": "console",
+						"enabled": true,
+						"colorizer": {
+							"info": [
+								"",
+								"",
+								""
+							],
+							"warning": [
+								"",
+								"",
+								""
+							],
+							"error": [
+								"",
+								"",
+								""
+							]
+						}
+					}
+                }
+            }
+        }
+    }
+}

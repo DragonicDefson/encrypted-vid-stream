@@ -1,0 +1,22 @@
+{
+  "name": "encrypted-vid-stream",
+  "version": "0.0.1",
+  "description": "Encrypted video streams",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "author": "Bradley Methorst - <contact@bradleymethorst.com>",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "config": "^3.3.9",
+    "express": "^4.18.2",
+    "winston": "^3.9.0",
+    "ws": "^8.13.0"
+  },
+  "optionalDependencies": {
+    "bufferutil": "^4.0.7",
+    "utf-8-validate": "^6.0.3"
+  }
+}
